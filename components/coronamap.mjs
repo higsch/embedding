@@ -5932,8 +5932,8 @@ class Province extends SvelteComponent {
 
 function add_css$3() {
   var style = element("style");
-  style.id = "svelte-cjd09s-style";
-  style.textContent = ".province-tooltip.svelte-cjd09s.svelte-cjd09s{position:absolute;z-index:100;width:42%;min-width:120px;background-color:#FFFFFF;box-shadow:0 1px 2px rgba(0,0,0,0.07), \n                0 2px 4px rgba(0,0,0,0.07), \n                0 4px 8px rgba(0,0,0,0.07), \n                0 8px 16px rgba(0,0,0,0.07),\n                0 16px 32px rgba(0,0,0,0.07), \n                0 32px 64px rgba(0,0,0,0.07)}.tooltip-content.svelte-cjd09s.svelte-cjd09s{width:100%;height:100%;padding:0.4em;color:#333333}.title.svelte-cjd09s.svelte-cjd09s{display:flex;align-items:baseline;justify-content:space-between;border-bottom:0.15em solid #333333}h3.svelte-cjd09s.svelte-cjd09s{margin:0;font-size:1.3em;font-weight:normal}h3.margin-r.svelte-cjd09s.svelte-cjd09s{margin-right:0.3em}h3.margin-l.svelte-cjd09s.svelte-cjd09s{margin-left:0.3em}.excess-deaths.svelte-cjd09s.svelte-cjd09s{padding:0 0.2em;border:none;border-radius:2px}.deaths.svelte-cjd09s.svelte-cjd09s{width:100%;margin:0.3em 0;font-size:1em}table.svelte-cjd09s.svelte-cjd09s{width:100%;border-collapse:collapse}tr.svelte-cjd09s td.svelte-cjd09s{padding:0.1em 0.2em 0.1em 0}tr.svelte-cjd09s td.svelte-cjd09s:nth-child(2){font-weight:bold;text-align:right;vertical-align:top}.hidden.svelte-cjd09s.svelte-cjd09s{visibility:hidden}";
+  style.id = "svelte-laga9-style";
+  style.textContent = ".province-tooltip.svelte-laga9.svelte-laga9{position:absolute;z-index:100;width:42%;min-width:120px;max-width:300px;background-color:#FFFFFF;box-shadow:0 1px 2px rgba(0,0,0,0.07), \n                0 2px 4px rgba(0,0,0,0.07), \n                0 4px 8px rgba(0,0,0,0.07), \n                0 8px 16px rgba(0,0,0,0.07),\n                0 16px 32px rgba(0,0,0,0.07), \n                0 32px 64px rgba(0,0,0,0.07)}.tooltip-content.svelte-laga9.svelte-laga9{width:100%;height:100%;padding:0.4em;color:#333333}.title.svelte-laga9.svelte-laga9{display:flex;align-items:baseline;justify-content:space-between;border-bottom:0.15em solid #333333}h3.svelte-laga9.svelte-laga9{margin:0;font-size:1.3em;font-weight:normal}h3.margin-r.svelte-laga9.svelte-laga9{margin-right:0.3em}h3.margin-l.svelte-laga9.svelte-laga9{margin-left:0.3em}.excess-deaths.svelte-laga9.svelte-laga9{padding:0 0.2em;border:none;border-radius:2px}.deaths.svelte-laga9.svelte-laga9{width:100%;margin:0.3em 0;font-size:1em}table.svelte-laga9.svelte-laga9{width:100%;border-collapse:collapse}tr.svelte-laga9 td.svelte-laga9{padding:0.1em 0.2em 0.1em 0}tr.svelte-laga9 td.svelte-laga9:nth-child(2){font-weight:bold;text-align:right;vertical-align:top}.hidden.svelte-laga9.svelte-laga9{visibility:hidden}";
   append(document.head, style);
 } // (69:54) {#if ($dir === 'ltr' && /\./.test(f(tooltip.data.estimatedDeaths)))}
 
@@ -5959,7 +5959,7 @@ function create_if_block$3(ctx) {
     },
 
     h() {
-      attr(span, "class", "hidden svelte-cjd09s");
+      attr(span, "class", "hidden svelte-laga9");
     },
 
     m(target, anchor) {
@@ -6217,37 +6217,37 @@ function create_fragment$4(ctx) {
     },
 
     h() {
-      attr(h3, "class", "svelte-cjd09s");
+      attr(h3, "class", "svelte-laga9");
       toggle_class(h3, "margin-r",
       /*$dir*/
       ctx[7] === "ltr");
       toggle_class(h3, "margin-l",
       /*$dir*/
       ctx[7] === "rtl");
-      attr(span, "class", "excess-deaths svelte-cjd09s");
+      attr(span, "class", "excess-deaths svelte-laga9");
       set_style(span, "color",
       /*tooltip*/
       ctx[0].data.percentageExcessDeaths > 60 ? "#FFFFFF" : " #333333");
       set_style(span, "background-color",
       /*tooltip*/
       ctx[0].data.color);
-      attr(div0, "class", "title svelte-cjd09s");
+      attr(div0, "class", "title svelte-laga9");
       set_style(div0, "border-color",
       /*tooltip*/
       ctx[0].data.color);
-      attr(td0, "class", "svelte-cjd09s");
-      attr(td1, "class", "svelte-cjd09s");
-      attr(tr0, "class", "svelte-cjd09s");
-      attr(td2, "class", "svelte-cjd09s");
-      attr(td3, "class", "svelte-cjd09s");
-      attr(tr1, "class", "svelte-cjd09s");
-      attr(td4, "class", "svelte-cjd09s");
-      attr(td5, "class", "svelte-cjd09s");
-      attr(tr2, "class", "svelte-cjd09s");
-      attr(table, "class", "svelte-cjd09s");
-      attr(div1, "class", "deaths svelte-cjd09s");
-      attr(div2, "class", "tooltip-content svelte-cjd09s");
-      attr(div3, "class", "province-tooltip svelte-cjd09s");
+      attr(td0, "class", "svelte-laga9");
+      attr(td1, "class", "svelte-laga9");
+      attr(tr0, "class", "svelte-laga9");
+      attr(td2, "class", "svelte-laga9");
+      attr(td3, "class", "svelte-laga9");
+      attr(tr1, "class", "svelte-laga9");
+      attr(td4, "class", "svelte-laga9");
+      attr(td5, "class", "svelte-laga9");
+      attr(tr2, "class", "svelte-laga9");
+      attr(table, "class", "svelte-laga9");
+      attr(div1, "class", "deaths svelte-laga9");
+      attr(div2, "class", "tooltip-content svelte-laga9");
+      attr(div3, "class", "province-tooltip svelte-laga9");
       set_style(div3, "left",
       /*leftPos*/
       ctx[4] + "px");
@@ -6547,7 +6547,7 @@ function instance$4($$self, $$props, $$invalidate) {
 class ProvinceTooltip extends SvelteComponent {
   constructor(options) {
     super();
-    if (!document.getElementById("svelte-cjd09s-style")) add_css$3();
+    if (!document.getElementById("svelte-laga9-style")) add_css$3();
     init(this, options, instance$4, create_fragment$4, safe_not_equal, {
       tooltip: 0,
       parentWidth: 1,
