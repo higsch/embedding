@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "seasons": ["Winter", "Spring"],
+    "content": {
+      "en": "Source: Mahan Ghafari, Aris Katzourakis and collaborators, August 28, 2020.",
+      "fa": "منبع: ماهان غفاری ، آریس کاتزوراکیس و همکاران ، ۲۸ آگوست ۲۰۲۰."
+    },
+    "link": "https://www.medrxiv.org/content/10.1101/2020.04.18.20070904v2"
+  },
+  {
+    "id": 1,
+    "seasons": ["Summer"],
+    "content": {
+      "en": "Source: Mahan Ghafari, Aris Katzourakis and collaborators, December 7, 2020.",
+      "fa": "منبع: ماهان غفاری ، آریس کاتزوراکیس و همکاران ، ۷ دسامبر ۲۰۲۰."
+    },
+    "link": "https://www.medrxiv.org/content/10.1101/2020.12.07.20245621v1"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "en": {
+    "signs": {
+      "percent": "%"
+    },
+    "seasonselector": {
+      "title": "Percentage excess deaths in",
+      "winter": "Winter",
+      "spring": "Spring",
+      "summer": "Summer",
+      "year20192020": "2019/2020",
+      "year2020": "2020"
+    },
+    "countrysummary": {
+      "description": "Total excess deaths:",
+      "link": "Link"
+    },
+    "provincetooltip": {
+      "deaths": "Deaths",
+      "estimated": "Estimated",
+      "registered": "Registered",
+      "excess": "Excess"
+    },
+    "province": {
+      "west_azerbaijan": "West Azerbaijan",
+      "east_azerbaijan": "East Azerbaijan",
+      "ardabil": "Ardabil",
+      "isfahan": "Isfahan",
+      "alborz": "Alborz",
+      "ilam": "Ilam",
+      "bushehr": "Bushehr",
+      "tehran": "Tehran",
+      "south_khorasan": "South Khorasan",
+      "razavi_khorasan": "Razavi Khorasan",
+      "north_khorasan": "North Khorasan",
+      "khuzestan": "Khuzestan",
+      "zanjan": "Zanjan",
+      "semnan": "Semnan",
+      "sistan_and_baluchistan": "Sistan and Baluchistan",
+      "fars": "Fars",
+      "qazvin": "Qazvin",
+      "qom": "Qom",
+      "kurdestan": "Kurdestan",
+      "kerman": "Kerman",
+      "kermanshah": "Kermanshah",
+      "kohgiluyeh_and_boyer_ahmad": "Kohgiluyeh and Boyer-Ahmad",
+      "lorestan": "Lorestan",
+      "mazandaran": "Mazandaran",
+      "markazi": "Markazi",
+      "hormozgan": "Hormozgan",
+      "hamedan": "Hamedan",
+      "yazd": "Yazd",
+      "chaharmahal_and_bakhtiari": "Chaharmahal and Bakhtiari",
+      "golestan": "Golestan",
+      "gilan": "Gilan"
+    },
+    "$dir": "ltr"
+  },
+  "fa": {
+    "signs": {
+      "percent": "٪"
+    },
+    "seasonselector": {
+      "title": "درصد مرگ بیش از حد در",
+      "winter": "زمستان",
+      "spring": "بهار",
+      "summer": "تابستان",
+      "year20192020": "۲۰۲۰/۲۰۱۹",
+      "year2020": "۲۰۲۰"
+    },
+    "countrysummary": {
+      "description": "کل مرگ و میر بیش از حد:",
+      "link": "پیوند"
+    },
+    "provincetooltip": {
+      "deaths": "فوتشدگان",
+      "estimated": "تخمین زده",
+      "registered": "ثبت شده",
+      "excess": "اضافی"
+    },
+    "province": {
+      "west_azerbaijan": "استان آذربایجان غربی",
+      "east_azerbaijan": "استان آذربایجان شرقی‎",
+      "ardabil": "استان اردبیل",
+      "isfahan": "استان اصفهان",
+      "alborz": "البرز‎ استان",
+      "ilam": "استان ایلام‎",
+      "bushehr": "استان بوشهر",
+      "tehran": "استان تهران",
+      "south_khorasan": "استان خراسان جنوبی‎",
+      "razavi_khorasan": "استان خراسان رضوی‎",
+      "north_khorasan": "استان خراسان شمالی",
+      "khuzestan": "استان خوزستان",
+      "zanjan": "استان زنجان",
+      "semnan": "استان سمنان",
+      "sistan_and_baluchistan": "استان سيستان و بلوچستان",
+      "fars": "استان فارس‎",
+      "qazvin": "استان قزوین‎",
+      "qom": "استان قم‎",
+      "kurdestan": "استان کردستان‎",
+      "kerman": "استان کرمان",
+      "kermanshah": "استان كرمانشاه‎",
+      "kohgiluyeh_and_boyer_ahmad": "استان کهگیلویه و بویراحمد‎",
+      "lorestan": "استان لرستان",
+      "mazandaran": "استان مازندران‎",
+      "markazi": "استان مرکزی‎",
+      "hormozgan": "استان هرمزگان‎",
+      "hamedan": "استان همدان",
+      "yazd": "استان یزد‎",
+      "chaharmahal_and_bakhtiari": "استان چهارمحال و بختیاری‎",
+      "golestan": "استان گلستان‎",
+      "gilan": "استان گیلان"
+    },
+    "$dir": "rtl"
+  }
+}
