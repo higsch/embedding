@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>higsch</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script>
+      (function () {
+        // define higsch object and variables
+        window.higsch = window.higsch || {};
+        window.higsch.assets = 'https://higsch.github.io/embedding/';
+        //window.higsch.assets = 'http://127.0.0.1:8080/public/';
+
+        var supports_import = false;
+        var can_use_import = false;
+        var shimport_url = window.higsch.assets + 'utility/shimport@1.0.1.js';
+        var shimport_promise;
+
+        // test, if import is supported
+        try {
+          new Function("if(0)import('')")();
+          supports_import = true;
+        } catch (e) {}
+
+        // if not, make shimport ready
+        if (!supports_import) {
+          shimport_promise = new Promise(function (fulfil, reject) {
+            var s = document.createElement('script');
+            s.src = shimport_url;
+            s.onload = function () {
+              fulfil(__shimport__);
+            };
+            s.onerror = reject;
+      
+            document.head.appendChild(s);
+          });
+        }
+
+        // define the load function
+        window.higsch.load = function (module) {
+          var url = new URL(module, location.href).href;
+      
+          if (supports_import) {
+            return eval("import('" + url + "')");
+          } else {
+            return shimport_promise.then(function (shimport) {
+              return shimport.load(url);
+            });
+          }
+        };
+      })();
+    </script>
+
+    <div data-component="map"></div>
+    <script>
+      var target = document.querySelector('[data-component="map"]');
+      var url = window.higsch.assets + 'components/cities.mjs';
+      var props = {
+        dataPath: window.higsch.assets + 'utility/serology_study.txt',
+        creditsPath: window.higsch.assets + 'utility/credits_cities.json',
+        countryPath: window.higsch.assets + 'utility/iran_country.geojson',
+        provincesPath: window.higsch.assets + 'utility/iran_provinces.geojson',
+        citiesPath: window.higsch.assets + 'utility/iran_cities.json'
+      };
+
+      let component;
+      higsch.load(url).then((mod) => {
+        const Component = mod.default;
+
+        component = new Component({
+          target,
+          props
+        });
+      });
+    </script>
+  </body>
+</html>
