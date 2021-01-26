@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Ahvaz",
+    "coords": [31.31901, 48.6842]
+  },
+  {
+    "name": "Ardabil",
+    "coords": [38.2498, 48.2933]
+  },
+  {
+    "name": "Babol",
+    "coords": [36.5499978, 52.6833306]
+  },
+  {
+    "name": "Esfahan",
+    "coords": [32.65246, 51.67462]
+  },
+  {
+    "name": "Gorgan",
+    "coords": [36.84165, 54.44361]
+  },
+  {
+    "name": "Hamedan",
+    "coords": [34.79922, 48.51456]
+  },
+  {
+    "name": "Kerman",
+    "coords": [30.28321, 57.07879]
+  },
+  {
+    "name": "Kermanshah",
+    "coords": [34.31417, 47.065]
+  },
+  {
+    "name": "Mashhad",
+    "coords": [36.31559, 59.56796]
+  },
+  {
+    "name": "Qom",
+    "coords": [34.6401, 50.8764]
+  },
+  {
+    "name": "Rasht",
+    "coords": [37.28077, 49.58319]
+  },
+  {
+    "name": "Sanandaj",
+    "coords": [35.31495, 46.99883]
+  },
+  {
+    "name": "Sari",
+    "coords": [36.56332, 53.06009]
+  },
+  {
+    "name": "Shiraz",
+    "coords": [29.61031, 52.53113]
+  },
+  {
+    "name": "Tabriz",
+    "coords": [38.08, 46.2919]
+  },
+  {
+    "name": "Tehran",
+    "coords": [35.69439, 51.42151]
+  },
+  {
+    "name": "Urmia",
+    "coords": [37.5499978, 45.0999996]
+  },
+  {
+    "name": "Zahedan",
+    "coords": [29.4963, 60.8629]
+  }
+]
