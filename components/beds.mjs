@@ -3211,8 +3211,8 @@ class Title extends SvelteComponent {
 
 function add_css$1() {
   var style = element("style");
-  style.id = "svelte-1gaegx6-style";
-  style.textContent = ".legend.svelte-1gaegx6{width:67%;margin:0.8em auto 0 auto;margin-left:117px;color:#333333}.colors.svelte-1gaegx6{display:flex;width:100%;height:1em}.color-tick.svelte-1gaegx6{height:100%;border-right:0.1em solid #333333}.color-tick.svelte-1gaegx6:first-child{border-left:0.1em solid #333333}.color-tick.gray-border.svelte-1gaegx6:not(:last-of-type){border-right-color:#DDD}.color-tick.gray-border.svelte-1gaegx6:last-of-type{border:none}.color.svelte-1gaegx6{height:67%}.labels.svelte-1gaegx6{display:flex;width:100%;height:1em}.label.svelte-1gaegx6{display:inline-block;font-size:0.8em;transform:translate(-50%, 0)}";
+  style.id = "svelte-1qdqqcu-style";
+  style.textContent = ".legend.svelte-1qdqqcu{width:67%;margin:0.8em auto 0 auto;color:#333333}.colors.svelte-1qdqqcu{display:flex;width:100%;height:1em}.color-tick.svelte-1qdqqcu{height:100%;border-right:0.1em solid #333333}.color-tick.svelte-1qdqqcu:first-child{border-left:0.1em solid #333333}.color-tick.gray-border.svelte-1qdqqcu:not(:last-of-type){border-right-color:#DDD}.color-tick.gray-border.svelte-1qdqqcu:last-of-type{border:none}.color.svelte-1qdqqcu{height:67%}.labels.svelte-1qdqqcu{display:flex;width:100%;height:1em}.label.svelte-1qdqqcu{display:inline-block;font-size:0.8em;transform:translate(-50%, 0)}";
   append(document.head, style);
 }
 
@@ -3265,11 +3265,11 @@ function create_each_block_1(key_1, ctx) {
     },
 
     h() {
-      attr(div0, "class", "color svelte-1gaegx6");
+      attr(div0, "class", "color svelte-1qdqqcu");
       set_style(div0, "background-color",
       /*color*/
       ctx[8]);
-      attr(div1, "class", "color-tick svelte-1gaegx6");
+      attr(div1, "class", "color-tick svelte-1qdqqcu");
       attr(div1, "style", div1_style_value = `width: ${
       /*width*/
       ctx[2] /
@@ -3355,7 +3355,7 @@ function create_if_block(ctx) {
     },
 
     h() {
-      attr(span, "class", "label svelte-1gaegx6");
+      attr(span, "class", "label svelte-1qdqqcu");
     },
 
     m(target, anchor) {
@@ -3581,19 +3581,19 @@ function create_fragment$1(ctx) {
     },
 
     h() {
-      attr(div0, "class", "colors svelte-1gaegx6");
+      attr(div0, "class", "colors svelte-1qdqqcu");
       add_render_callback(() =>
       /*div0_elementresize_handler*/
       ctx[4].call(div0));
-      attr(span, "class", "label svelte-1gaegx6");
+      attr(span, "class", "label svelte-1qdqqcu");
       attr(div1, "class", "label-container");
       set_style(div1, "width",
       /*width*/
       ctx[2] /
       /*numColors*/
       ctx[3] + "px");
-      attr(div2, "class", "labels svelte-1gaegx6");
-      attr(div3, "class", "legend svelte-1gaegx6");
+      attr(div2, "class", "labels svelte-1qdqqcu");
+      attr(div3, "class", "legend svelte-1qdqqcu");
     },
 
     m(target, anchor) {
@@ -3711,7 +3711,7 @@ function instance($$self, $$props, $$invalidate) {
 class Legend extends SvelteComponent {
   constructor(options) {
     super();
-    if (!document.getElementById("svelte-1gaegx6-style")) add_css$1();
+    if (!document.getElementById("svelte-1qdqqcu-style")) add_css$1();
     init(this, options, instance, create_fragment$1, safe_not_equal, {
       colorArray: 0,
       everySecondLabelOnly: 1
