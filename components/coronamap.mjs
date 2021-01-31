@@ -4861,8 +4861,8 @@ class SeasonSelector extends SvelteComponent {
 
 function add_css$1() {
   var style = element("style");
-  style.id = "svelte-1wbmkj-style";
-  style.textContent = ".legend.svelte-1wbmkj{width:67%;margin:0.8em auto 0 auto;color:#333333}.colors.svelte-1wbmkj{display:flex;width:100%;height:1em}.color-tick.svelte-1wbmkj{height:100%}.color-tick.svelte-1wbmkj{border-right:0.1em solid #333333}.color-tick.gray-border.svelte-1wbmkj{border-color:#DDD}.color.svelte-1wbmkj{height:67%}.labels.svelte-1wbmkj{display:flex;width:100%;height:1em}.label.svelte-1wbmkj{display:inline-block;font-size:0.9em;transform:translate(-50%, 0)}";
+  style.id = "svelte-9ue0qh-style";
+  style.textContent = ".legend.svelte-9ue0qh{width:67%;margin:0.8em auto 0 auto;color:#333333}.colors.svelte-9ue0qh{display:flex;width:100%;height:1em}.color-tick.svelte-9ue0qh{height:100%}.color-tick.svelte-9ue0qh{border-right:0.1em solid #333333}.color-tick.gray-border.svelte-9ue0qh{border-color:#DDD}.color.svelte-9ue0qh{height:67%}.labels.svelte-9ue0qh{display:flex;width:100%;height:1em}.legend-label.svelte-9ue0qh{display:inline-block;font-size:0.9em;transform:translate(-50%, 0)}";
   append(document.head, style);
 }
 
@@ -4911,11 +4911,11 @@ function create_each_block_1(key_1, ctx) {
     },
 
     h() {
-      attr(div0, "class", "color svelte-1wbmkj");
+      attr(div0, "class", "color svelte-9ue0qh");
       set_style(div0, "background-color",
       /*color*/
       ctx[10]);
-      attr(div1, "class", "color-tick svelte-1wbmkj");
+      attr(div1, "class", "color-tick svelte-9ue0qh");
       attr(div1, "style", div1_style_value = `width: ${
       /*width*/
       ctx[2] /
@@ -5005,7 +5005,7 @@ function create_if_block_3(ctx) {
     },
 
     h() {
-      attr(div, "class", "color-tick svelte-1wbmkj");
+      attr(div, "class", "color-tick svelte-9ue0qh");
       set_style(div, "width",
       /*width*/
       ctx[2] /
@@ -5116,7 +5116,7 @@ function create_if_block_1$1(ctx) {
     },
 
     h() {
-      attr(span, "class", "label svelte-1wbmkj");
+      attr(span, "class", "legend-label svelte-9ue0qh");
     },
 
     m(target, anchor) {
@@ -5389,12 +5389,12 @@ function create_fragment$1(ctx) {
     },
 
     h() {
-      attr(div0, "class", "colors svelte-1wbmkj");
+      attr(div0, "class", "colors svelte-9ue0qh");
       add_render_callback(() =>
       /*div0_elementresize_handler*/
       ctx[6].call(div0));
-      attr(div1, "class", "labels svelte-1wbmkj");
-      attr(div2, "class", "legend svelte-1wbmkj");
+      attr(div1, "class", "labels svelte-9ue0qh");
+      attr(div2, "class", "legend svelte-9ue0qh");
     },
 
     m(target, anchor) {
@@ -5550,7 +5550,7 @@ function instance$1($$self, $$props, $$invalidate) {
 class Legend extends SvelteComponent {
   constructor(options) {
     super();
-    if (!document.getElementById("svelte-1wbmkj-style")) add_css$1();
+    if (!document.getElementById("svelte-9ue0qh-style")) add_css$1();
     init(this, options, instance$1, create_fragment$1, safe_not_equal, {
       colorArray: 0,
       everySecondLabelOnly: 1
@@ -5932,10 +5932,10 @@ class Province extends SvelteComponent {
 
 function add_css$3() {
   var style = element("style");
-  style.id = "svelte-laga9-style";
-  style.textContent = ".province-tooltip.svelte-laga9.svelte-laga9{position:absolute;z-index:100;width:42%;min-width:120px;max-width:300px;background-color:#FFFFFF;box-shadow:0 1px 2px rgba(0,0,0,0.07), \n                0 2px 4px rgba(0,0,0,0.07), \n                0 4px 8px rgba(0,0,0,0.07), \n                0 8px 16px rgba(0,0,0,0.07),\n                0 16px 32px rgba(0,0,0,0.07), \n                0 32px 64px rgba(0,0,0,0.07)}.tooltip-content.svelte-laga9.svelte-laga9{width:100%;height:100%;padding:0.4em;color:#333333}.title.svelte-laga9.svelte-laga9{display:flex;align-items:baseline;justify-content:space-between;border-bottom:0.15em solid #333333}h3.svelte-laga9.svelte-laga9{margin:0;font-size:1.3em;font-weight:normal}h3.margin-r.svelte-laga9.svelte-laga9{margin-right:0.3em}h3.margin-l.svelte-laga9.svelte-laga9{margin-left:0.3em}.excess-deaths.svelte-laga9.svelte-laga9{padding:0 0.2em;border:none;border-radius:2px}.deaths.svelte-laga9.svelte-laga9{width:100%;margin:0.3em 0;font-size:1em}table.svelte-laga9.svelte-laga9{width:100%;border-collapse:collapse}tr.svelte-laga9 td.svelte-laga9{padding:0.1em 0.2em 0.1em 0}tr.svelte-laga9 td.svelte-laga9:nth-child(2){font-weight:bold;text-align:right;vertical-align:top}.hidden.svelte-laga9.svelte-laga9{visibility:hidden}";
+  style.id = "svelte-1ps4wd3-style";
+  style.textContent = ".province-tooltip.svelte-1ps4wd3.svelte-1ps4wd3{position:absolute;z-index:100;width:42%;min-width:120px;background-color:#FFFFFF;box-shadow:0 1px 2px rgba(0,0,0,0.07), \n                0 2px 4px rgba(0,0,0,0.07), \n                0 4px 8px rgba(0,0,0,0.07)}.tooltip-content.svelte-1ps4wd3.svelte-1ps4wd3{width:100%;height:100%;padding:0.4em;color:#333333}.tooltip-title.svelte-1ps4wd3.svelte-1ps4wd3{display:flex;align-items:baseline;justify-content:space-between;border-bottom:0.15em solid #333333}.tooltip-h3.svelte-1ps4wd3.svelte-1ps4wd3{margin:0;font-size:1.3em;font-weight:normal}.tooltip-h3.margin-r.svelte-1ps4wd3.svelte-1ps4wd3{margin-right:0.3em}.tooltip-h3.margin-l.svelte-1ps4wd3.svelte-1ps4wd3{margin-left:0.3em}.tooltip-h4.svelte-1ps4wd3.svelte-1ps4wd3{font-size:1em;font-weight:bold}.excess-deaths.svelte-1ps4wd3.svelte-1ps4wd3{padding:0 0.2em;border:none;border-radius:2px}.deaths.svelte-1ps4wd3.svelte-1ps4wd3{width:100%;margin:0.3em 0;font-size:1em}table.svelte-1ps4wd3.svelte-1ps4wd3{width:100%;border-collapse:collapse}tr.svelte-1ps4wd3 td.svelte-1ps4wd3{padding:0.1em 0.2em 0.1em 0}tr.svelte-1ps4wd3 td.svelte-1ps4wd3:nth-child(2){font-weight:bold;text-align:right;vertical-align:top}.hidden.svelte-1ps4wd3.svelte-1ps4wd3{visibility:hidden}";
   append(document.head, style);
-} // (69:54) {#if ($dir === 'ltr' && /\./.test(f(tooltip.data.estimatedDeaths)))}
+} // (70:54) {#if ($dir === 'ltr' && /\./.test(f(tooltip.data.estimatedDeaths)))}
 
 
 function create_if_block$3(ctx) {
@@ -5959,7 +5959,7 @@ function create_if_block$3(ctx) {
     },
 
     h() {
-      attr(span, "class", "hidden svelte-laga9");
+      attr(span, "class", "hidden svelte-1ps4wd3");
     },
 
     m(target, anchor) {
@@ -6140,7 +6140,9 @@ function create_fragment$4(ctx) {
         class: true
       });
       var div1_nodes = children(div1);
-      h4 = claim_element(div1_nodes, "H4", {});
+      h4 = claim_element(div1_nodes, "H4", {
+        class: true
+      });
       var h4_nodes = children(h4);
       t4 = claim_text(h4_nodes, t4_value);
       h4_nodes.forEach(detach);
@@ -6217,37 +6219,38 @@ function create_fragment$4(ctx) {
     },
 
     h() {
-      attr(h3, "class", "svelte-laga9");
+      attr(h3, "class", "tooltip-h3 svelte-1ps4wd3");
       toggle_class(h3, "margin-r",
       /*$dir*/
       ctx[7] === "ltr");
       toggle_class(h3, "margin-l",
       /*$dir*/
       ctx[7] === "rtl");
-      attr(span, "class", "excess-deaths svelte-laga9");
+      attr(span, "class", "excess-deaths svelte-1ps4wd3");
       set_style(span, "color",
       /*tooltip*/
       ctx[0].data.percentageExcessDeaths > 60 ? "#FFFFFF" : " #333333");
       set_style(span, "background-color",
       /*tooltip*/
       ctx[0].data.color);
-      attr(div0, "class", "title svelte-laga9");
+      attr(div0, "class", "tooltip-title svelte-1ps4wd3");
       set_style(div0, "border-color",
       /*tooltip*/
       ctx[0].data.color);
-      attr(td0, "class", "svelte-laga9");
-      attr(td1, "class", "svelte-laga9");
-      attr(tr0, "class", "svelte-laga9");
-      attr(td2, "class", "svelte-laga9");
-      attr(td3, "class", "svelte-laga9");
-      attr(tr1, "class", "svelte-laga9");
-      attr(td4, "class", "svelte-laga9");
-      attr(td5, "class", "svelte-laga9");
-      attr(tr2, "class", "svelte-laga9");
-      attr(table, "class", "svelte-laga9");
-      attr(div1, "class", "deaths svelte-laga9");
-      attr(div2, "class", "tooltip-content svelte-laga9");
-      attr(div3, "class", "province-tooltip svelte-laga9");
+      attr(h4, "class", "tooltip-h4 svelte-1ps4wd3");
+      attr(td0, "class", "svelte-1ps4wd3");
+      attr(td1, "class", "svelte-1ps4wd3");
+      attr(tr0, "class", "svelte-1ps4wd3");
+      attr(td2, "class", "svelte-1ps4wd3");
+      attr(td3, "class", "svelte-1ps4wd3");
+      attr(tr1, "class", "svelte-1ps4wd3");
+      attr(td4, "class", "svelte-1ps4wd3");
+      attr(td5, "class", "svelte-1ps4wd3");
+      attr(tr2, "class", "svelte-1ps4wd3");
+      attr(table, "class", "svelte-1ps4wd3");
+      attr(div1, "class", "deaths svelte-1ps4wd3");
+      attr(div2, "class", "tooltip-content svelte-1ps4wd3");
+      attr(div3, "class", "province-tooltip svelte-1ps4wd3");
       set_style(div3, "left",
       /*leftPos*/
       ctx[4] + "px");
@@ -6547,7 +6550,7 @@ function instance$4($$self, $$props, $$invalidate) {
 class ProvinceTooltip extends SvelteComponent {
   constructor(options) {
     super();
-    if (!document.getElementById("svelte-laga9-style")) add_css$3();
+    if (!document.getElementById("svelte-1ps4wd3-style")) add_css$3();
     init(this, options, instance$4, create_fragment$4, safe_not_equal, {
       tooltip: 0,
       parentWidth: 1,
