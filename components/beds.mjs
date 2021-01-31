@@ -5654,7 +5654,7 @@ function create_if_block_1$1(ctx) {
       credit:
       /*credits*/
       ctx[4],
-      showLink: false
+      showLink: true
     }
   });
   return {

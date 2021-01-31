@@ -8200,7 +8200,7 @@ function create_if_block_1$2(ctx) {
       credit:
       /*credits*/
       ctx[5],
-      showLink: false
+      showLink: true
     }
   });
   return {
