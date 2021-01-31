@@ -6296,8 +6296,8 @@ class City extends SvelteComponent {
 
 function add_css$2() {
   var style = element("style");
-  style.id = "svelte-gnzr32-style";
-  style.textContent = ".province-tooltip.svelte-gnzr32.svelte-gnzr32{position:absolute;z-index:100;width:32%;min-width:250px;background-color:#FFFFFF;box-shadow:0 1px 2px rgba(0,0,0,0.07), \n                0 2px 4px rgba(0,0,0,0.07), \n                0 4px 8px rgba(0,0,0,0.07)}.tooltip-content.svelte-gnzr32.svelte-gnzr32{width:100%;height:100%;padding:0.4em;color:#333333}.tooltip-title.svelte-gnzr32.svelte-gnzr32{display:flex;align-items:baseline;justify-content:space-between;border-bottom:0.15em solid #333333}.tooltip-h3.svelte-gnzr32.svelte-gnzr32{margin:0;font-size:1.3em;font-weight:normal}.seroprevalence.svelte-gnzr32.svelte-gnzr32{width:100%;margin:0.3em 0;font-size:1em}.tooltip-h4.svelte-gnzr32.svelte-gnzr32{margin:0 0 0.3em 0;font-size:1em;font-weight:normal}table.svelte-gnzr32.svelte-gnzr32{width:100%;font-size:0.9em;border-collapse:collapse}tr.svelte-gnzr32 td.svelte-gnzr32{padding:0.1em 0.2em 0.1em 0}tr.svelte-gnzr32 td.svelte-gnzr32:nth-child(2){font-weight:bold;vertical-align:top}.ci.svelte-gnzr32.svelte-gnzr32{margin:0 0 0 0.5em;font-size:0.8em;font-weight:normal}.explainer.svelte-gnzr32.svelte-gnzr32{margin:0.3em 0 0 0;font-size:0.7em;color:#AAAAAA}";
+  style.id = "svelte-jrngfd-style";
+  style.textContent = ".province-tooltip.svelte-jrngfd.svelte-jrngfd{position:absolute;z-index:100;width:42%;min-width:250px;background-color:#FFFFFF;box-shadow:0 1px 2px rgba(0,0,0,0.07), \n                0 2px 4px rgba(0,0,0,0.07), \n                0 4px 8px rgba(0,0,0,0.07)}.tooltip-content.svelte-jrngfd.svelte-jrngfd{width:100%;height:100%;padding:0.4em;color:#333333}.tooltip-title.svelte-jrngfd.svelte-jrngfd{display:flex;align-items:baseline;justify-content:space-between;border-bottom:0.15em solid #333333}.tooltip-h3.svelte-jrngfd.svelte-jrngfd{margin:0;font-size:1.3em;font-weight:normal}.seroprevalence.svelte-jrngfd.svelte-jrngfd{width:100%;margin:0.3em 0;font-size:1em}.tooltip-h4.svelte-jrngfd.svelte-jrngfd{margin:0 0 0.3em 0;font-size:1em;font-weight:normal}table.svelte-jrngfd.svelte-jrngfd{width:100%;font-size:0.9em;border-collapse:collapse}tr.svelte-jrngfd td.svelte-jrngfd{padding:0.1em 0.2em 0.1em 0}tr.svelte-jrngfd td.svelte-jrngfd:nth-child(2){font-weight:bold;vertical-align:top}.ci.svelte-jrngfd.svelte-jrngfd{margin:0 0 0 0.5em;font-size:0.8em;font-weight:normal}.explainer.svelte-jrngfd.svelte-jrngfd{margin:0.3em 0 0 0;font-size:0.7em;color:#AAAAAA}";
   append(document.head, style);
 }
 
@@ -6519,23 +6519,23 @@ function create_fragment$5(ctx) {
     },
 
     h() {
-      attr(h3, "class", "tooltip-h3 svelte-gnzr32");
-      attr(div0, "class", "tooltip-title svelte-gnzr32");
+      attr(h3, "class", "tooltip-h3 svelte-jrngfd");
+      attr(div0, "class", "tooltip-title svelte-jrngfd");
       set_style(div0, "border-color", circleColor);
-      attr(h4, "class", "tooltip-h4 svelte-gnzr32");
-      attr(td0, "class", "svelte-gnzr32");
-      attr(span0, "class", "ci svelte-gnzr32");
-      attr(td1, "class", "svelte-gnzr32");
-      attr(tr0, "class", "svelte-gnzr32");
-      attr(td2, "class", "svelte-gnzr32");
-      attr(span1, "class", "ci svelte-gnzr32");
-      attr(td3, "class", "svelte-gnzr32");
-      attr(tr1, "class", "svelte-gnzr32");
-      attr(table, "class", "svelte-gnzr32");
-      attr(div1, "class", "explainer svelte-gnzr32");
-      attr(div2, "class", "seroprevalence svelte-gnzr32");
-      attr(div3, "class", "tooltip-content svelte-gnzr32");
-      attr(div4, "class", "province-tooltip svelte-gnzr32");
+      attr(h4, "class", "tooltip-h4 svelte-jrngfd");
+      attr(td0, "class", "svelte-jrngfd");
+      attr(span0, "class", "ci svelte-jrngfd");
+      attr(td1, "class", "svelte-jrngfd");
+      attr(tr0, "class", "svelte-jrngfd");
+      attr(td2, "class", "svelte-jrngfd");
+      attr(span1, "class", "ci svelte-jrngfd");
+      attr(td3, "class", "svelte-jrngfd");
+      attr(tr1, "class", "svelte-jrngfd");
+      attr(table, "class", "svelte-jrngfd");
+      attr(div1, "class", "explainer svelte-jrngfd");
+      attr(div2, "class", "seroprevalence svelte-jrngfd");
+      attr(div3, "class", "tooltip-content svelte-jrngfd");
+      attr(div4, "class", "province-tooltip svelte-jrngfd");
       set_style(div4, "left",
       /*leftPos*/
       ctx[4] + "px");
@@ -6731,7 +6731,7 @@ function instance$4($$self, $$props, $$invalidate) {
 class CityTooltip extends SvelteComponent {
   constructor(options) {
     super();
-    if (!document.getElementById("svelte-gnzr32-style")) add_css$2();
+    if (!document.getElementById("svelte-jrngfd-style")) add_css$2();
     init(this, options, instance$4, create_fragment$5, safe_not_equal, {
       tooltip: 0,
       parentWidth: 1,
