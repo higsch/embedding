@@ -7748,7 +7748,7 @@ function add_css$7() {
   style.id = "svelte-1jbqfkv-style";
   style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-1jbqfkv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontSize);overflow:hidden}";
   append(document_1.head, style);
-} // (98:2) {#if (country && provinces && dictionary && credits)}
+} // (94:2) {#if (country && provinces && dictionary && credits)}
 
 
 function create_if_block$6(ctx) {
@@ -7961,7 +7961,7 @@ function create_if_block$6(ctx) {
     }
 
   };
-} // (109:4) {#if (provinces && provinces.features)}
+} // (105:4) {#if (provinces && provinces.features)}
 
 
 function create_if_block_2$2(ctx) {
@@ -8030,7 +8030,7 @@ function create_if_block_2$2(ctx) {
     }
 
   };
-} // (119:4) {#if (credits)}
+} // (115:4) {#if (credits)}
 
 
 function create_if_block_1$4(ctx) {
@@ -8043,9 +8043,7 @@ function create_if_block_1$4(ctx) {
       ctx[7].find(
       /*func*/
       ctx[23]),
-      showLink:
-      /*showSeasonSelector*/
-      ctx[0]
+      showLink: true
     }
   });
   return {
@@ -8071,11 +8069,6 @@ function create_if_block_1$4(ctx) {
       ctx[7].find(
       /*func*/
       ctx[23]);
-      if (dirty &
-      /*showSeasonSelector*/
-      1) credits_1_changes.showLink =
-      /*showSeasonSelector*/
-      ctx[0];
       credits_1.$set(credits_1_changes);
     },
 
@@ -8245,9 +8238,6 @@ function instance$8($$self, $$props, $$invalidate) {
   let {
     direction = null
   } = $$props;
-  ({
-    fetch: window.higsch && window.higsch.fetch ? window.higsch.fetch : fetch
-  });
   const years = {
     winter: "year20192020",
     spring: "year2020",
