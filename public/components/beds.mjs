@@ -3585,7 +3585,7 @@ function create_fragment$1(ctx) {
       add_render_callback(() =>
       /*div0_elementresize_handler*/
       ctx[4].call(div0));
-      attr(span, "class", "label");
+      attr(span, "class", "legend-label svelte-yxj9a6");
       attr(div1, "class", "label-container");
       set_style(div1, "width",
       /*width*/
