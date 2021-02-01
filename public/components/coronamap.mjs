@@ -7748,7 +7748,7 @@ function add_css$7() {
   style.id = "svelte-1jbqfkv-style";
   style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-1jbqfkv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontSize);overflow:hidden}";
   append(document_1.head, style);
-} // (94:2) {#if (seasonData && seasonData.length && country && provinces && dictionary && credits)}
+} // (94:2) {#if (seasons && selectedSeason && seasonData && seasonData.length && country && provinces && dictionary && credits)}
 
 
 function create_if_block$6(ctx) {
@@ -7786,8 +7786,8 @@ function create_if_block$6(ctx) {
     }
   });
   let if_block0 =
-  /*provinces*/
-  ctx[5] &&
+  /*country*/
+  ctx[6].features &&
   /*provinces*/
   ctx[5].features && create_if_block_2$2(ctx);
   countrysummary = new CountrySummary({
@@ -7868,16 +7868,16 @@ function create_if_block$6(ctx) {
       legend.$set(legend_changes);
 
       if (
-      /*provinces*/
-      ctx[5] &&
+      /*country*/
+      ctx[6].features &&
       /*provinces*/
       ctx[5].features) {
         if (if_block0) {
           if_block0.p(ctx, dirty);
 
           if (dirty &
-          /*provinces*/
-          32) {
+          /*country, provinces*/
+          96) {
             transition_in(if_block0, 1);
           }
         } else {
@@ -7961,7 +7961,7 @@ function create_if_block$6(ctx) {
     }
 
   };
-} // (105:4) {#if (provinces && provinces.features)}
+} // (105:4) {#if (country.features && provinces.features)}
 
 
 function create_if_block_2$2(ctx) {
@@ -8095,6 +8095,10 @@ function create_fragment$8(ctx) {
   let div_resize_listener;
   let current;
   let if_block =
+  /*seasons*/
+  ctx[9] &&
+  /*selectedSeason*/
+  ctx[3] &&
   /*seasonData*/
   ctx[8] &&
   /*seasonData*/
@@ -8146,6 +8150,10 @@ function create_fragment$8(ctx) {
 
     p(ctx, [dirty]) {
       if (
+      /*seasons*/
+      ctx[9] &&
+      /*selectedSeason*/
+      ctx[3] &&
       /*seasonData*/
       ctx[8] &&
       /*seasonData*/
@@ -8162,8 +8170,8 @@ function create_fragment$8(ctx) {
           if_block.p(ctx, dirty);
 
           if (dirty &
-          /*seasonData, country, provinces, dictionary, credits*/
-          482) {
+          /*seasons, selectedSeason, seasonData, country, provinces, dictionary, credits*/
+          1002) {
             transition_in(if_block, 1);
           }
         } else {
