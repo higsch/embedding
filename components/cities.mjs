@@ -8017,7 +8017,7 @@ function add_css$6() {
   style.id = "svelte-1jbqfkv-style";
   style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-1jbqfkv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontSize);overflow:hidden}";
   append(document.head, style);
-} // (51:2) {#if (splitData && country && provinces && cities && credits)}
+} // (51:2) {#if (splitData && splitData.length && country && provinces && cities && credits)}
 
 
 function create_if_block$2(ctx) {
@@ -8252,6 +8252,8 @@ function create_fragment$9(ctx) {
   let if_block =
   /*splitData*/
   ctx[1] &&
+  /*splitData*/
+  ctx[1].length &&
   /*country*/
   ctx[3] &&
   /*provinces*/
@@ -8301,6 +8303,8 @@ function create_fragment$9(ctx) {
       if (
       /*splitData*/
       ctx[1] &&
+      /*splitData*/
+      ctx[1].length &&
       /*country*/
       ctx[3] &&
       /*provinces*/
