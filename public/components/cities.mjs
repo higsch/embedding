@@ -8017,7 +8017,7 @@ function add_css$6() {
   style.id = "svelte-1jbqfkv-style";
   style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-1jbqfkv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontSize);overflow:hidden}";
   append(document.head, style);
-} // (51:2) {#if (country && provinces && cities && credits)}
+} // (51:2) {#if (splitData && country && provinces && cities && credits)}
 
 
 function create_if_block$2(ctx) {
@@ -8250,6 +8250,8 @@ function create_fragment$9(ctx) {
   let div_resize_listener;
   let current;
   let if_block =
+  /*splitData*/
+  ctx[1] &&
   /*country*/
   ctx[3] &&
   /*provinces*/
@@ -8297,6 +8299,8 @@ function create_fragment$9(ctx) {
 
     p(ctx, [dirty]) {
       if (
+      /*splitData*/
+      ctx[1] &&
       /*country*/
       ctx[3] &&
       /*provinces*/
@@ -8309,8 +8313,8 @@ function create_fragment$9(ctx) {
           if_block.p(ctx, dirty);
 
           if (dirty &
-          /*country, provinces, cities, credits*/
-          60) {
+          /*splitData, country, provinces, cities, credits*/
+          62) {
             transition_in(if_block, 1);
           }
         } else {
