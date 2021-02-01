@@ -7748,7 +7748,7 @@ function add_css$7() {
   style.id = "svelte-1jbqfkv-style";
   style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-1jbqfkv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontSize);overflow:hidden}";
   append(document_1.head, style);
-} // (94:2) {#if (country && provinces && dictionary && credits)}
+} // (94:2) {#if (seasonData && country && provinces && dictionary && credits)}
 
 
 function create_if_block$6(ctx) {
@@ -8095,6 +8095,8 @@ function create_fragment$8(ctx) {
   let div_resize_listener;
   let current;
   let if_block =
+  /*seasonData*/
+  ctx[8] &&
   /*country*/
   ctx[6] &&
   /*provinces*/
@@ -8142,6 +8144,8 @@ function create_fragment$8(ctx) {
 
     p(ctx, [dirty]) {
       if (
+      /*seasonData*/
+      ctx[8] &&
       /*country*/
       ctx[6] &&
       /*provinces*/
@@ -8154,8 +8158,8 @@ function create_fragment$8(ctx) {
           if_block.p(ctx, dirty);
 
           if (dirty &
-          /*country, provinces, dictionary, credits*/
-          226) {
+          /*seasonData, country, provinces, dictionary, credits*/
+          482) {
             transition_in(if_block, 1);
           }
         } else {
