@@ -7745,8 +7745,8 @@ const {
 
 function add_css$7() {
   var style = element("style");
-  style.id = "svelte-1jbqfkv-style";
-  style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-1jbqfkv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontSize);overflow:hidden}";
+  style.id = "svelte-74kmwv-style";
+  style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-74kmwv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontsize);overflow:hidden}";
   append(document_1.head, style);
 } // (94:2) {#if (seasons && selectedSeason && seasonData && seasonData.length && country && provinces && dictionary && credits)}
 
@@ -8130,10 +8130,10 @@ function create_fragment$8(ctx) {
     },
 
     h() {
-      attr(div, "class", "component-wrapper svelte-1jbqfkv");
-      set_style(div, "--fontSize", Math.min(16, Math.max(8,
+      attr(div, "class", "component-wrapper svelte-74kmwv");
+      set_style(div, "--fontsize", Math.min(16, Math.max(8, (
       /*width*/
-      ctx[2] / 30)) + "px");
+      ctx[2] || 0) / 30)) + "px");
       add_render_callback(() =>
       /*div_elementresize_handler*/
       ctx[24].call(div));
@@ -8191,9 +8191,9 @@ function create_fragment$8(ctx) {
       if (!current || dirty &
       /*width*/
       4) {
-        set_style(div, "--fontSize", Math.min(16, Math.max(8,
+        set_style(div, "--fontsize", Math.min(16, Math.max(8, (
         /*width*/
-        ctx[2] / 30)) + "px");
+        ctx[2] || 0) / 30)) + "px");
       }
     },
 
@@ -8388,7 +8388,7 @@ function instance$8($$self, $$props, $$invalidate) {
 class Component extends SvelteComponent {
   constructor(options) {
     super();
-    if (!document_1.getElementById("svelte-1jbqfkv-style")) add_css$7();
+    if (!document_1.getElementById("svelte-74kmwv-style")) add_css$7();
     init(this, options, instance$8, create_fragment$8, safe_not_equal, {
       dataPath: 11,
       countryPath: 12,
