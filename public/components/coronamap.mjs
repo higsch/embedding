@@ -7748,7 +7748,7 @@ function add_css$7() {
   style.id = "svelte-74kmwv-style";
   style.textContent = "*{margin:0;padding:0;box-sizing:border-box}.component-wrapper.svelte-74kmwv{display:flex;flex-direction:column;width:100%;height:100%;font-family:'Open Sans', sans-serif;font-size:var(--fontsize);overflow:hidden}";
   append(document_1.head, style);
-} // (94:2) {#if (seasons && selectedSeason && seasonData && seasonData.length && country && provinces && dictionary && credits)}
+} // (94:2) {#if (seasons && selectedSeason && seasonData && seasonData.length && country && provinces && $dict)}
 
 
 function create_if_block$6(ctx) {
@@ -7765,10 +7765,10 @@ function create_if_block$6(ctx) {
     props: {
       seasons:
       /*seasons*/
-      ctx[9],
+      ctx[8],
       selectedSeason:
       /*selectedSeason*/
-      ctx[3],
+      ctx[2],
       selectable:
       /*showSeasonSelector*/
       ctx[0]
@@ -7781,25 +7781,25 @@ function create_if_block$6(ctx) {
     props: {
       colorArray:
       /*colorArray*/
-      ctx[4],
+      ctx[3],
       everySecondLabelOnly: true
     }
   });
   let if_block0 =
   /*country*/
-  ctx[6].features &&
+  ctx[5].features &&
   /*provinces*/
-  ctx[5].features && create_if_block_2$2(ctx);
+  ctx[4].features && create_if_block_2$2(ctx);
   countrysummary = new CountrySummary({
     props: {
       data:
       /*seasonData*/
-      ctx[8]
+      ctx[7]
     }
   });
   let if_block1 =
   /*credits*/
-  ctx[7] && create_if_block_1$4(ctx);
+  ctx[6] && create_if_block_1$4(ctx);
   return {
     c() {
       create_component(seasonselector.$$.fragment);
@@ -7845,14 +7845,14 @@ function create_if_block$6(ctx) {
       const seasonselector_changes = {};
       if (dirty &
       /*seasons*/
-      512) seasonselector_changes.seasons =
+      256) seasonselector_changes.seasons =
       /*seasons*/
-      ctx[9];
+      ctx[8];
       if (dirty &
       /*selectedSeason*/
-      8) seasonselector_changes.selectedSeason =
+      4) seasonselector_changes.selectedSeason =
       /*selectedSeason*/
-      ctx[3];
+      ctx[2];
       if (dirty &
       /*showSeasonSelector*/
       1) seasonselector_changes.selectable =
@@ -7862,22 +7862,22 @@ function create_if_block$6(ctx) {
       const legend_changes = {};
       if (dirty &
       /*colorArray*/
-      16) legend_changes.colorArray =
+      8) legend_changes.colorArray =
       /*colorArray*/
-      ctx[4];
+      ctx[3];
       legend.$set(legend_changes);
 
       if (
       /*country*/
-      ctx[6].features &&
+      ctx[5].features &&
       /*provinces*/
-      ctx[5].features) {
+      ctx[4].features) {
         if (if_block0) {
           if_block0.p(ctx, dirty);
 
           if (dirty &
           /*country, provinces*/
-          96) {
+          48) {
             transition_in(if_block0, 1);
           }
         } else {
@@ -7897,20 +7897,20 @@ function create_if_block$6(ctx) {
       const countrysummary_changes = {};
       if (dirty &
       /*seasonData*/
-      256) countrysummary_changes.data =
+      128) countrysummary_changes.data =
       /*seasonData*/
-      ctx[8];
+      ctx[7];
       countrysummary.$set(countrysummary_changes);
 
       if (
       /*credits*/
-      ctx[7]) {
+      ctx[6]) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
 
           if (dirty &
           /*credits*/
-          128) {
+          64) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -7971,13 +7971,13 @@ function create_if_block_2$2(ctx) {
     props: {
       featuresCountry:
       /*country*/
-      ctx[6].features,
+      ctx[5].features,
       featuresProvinces:
       /*provinces*/
-      ctx[5].features,
+      ctx[4].features,
       data:
       /*seasonData*/
-      ctx[8]
+      ctx[7]
     }
   });
   return {
@@ -7998,19 +7998,19 @@ function create_if_block_2$2(ctx) {
       const map_changes = {};
       if (dirty &
       /*country*/
-      64) map_changes.featuresCountry =
+      32) map_changes.featuresCountry =
       /*country*/
-      ctx[6].features;
-      if (dirty &
-      /*provinces*/
-      32) map_changes.featuresProvinces =
-      /*provinces*/
       ctx[5].features;
       if (dirty &
+      /*provinces*/
+      16) map_changes.featuresProvinces =
+      /*provinces*/
+      ctx[4].features;
+      if (dirty &
       /*seasonData*/
-      256) map_changes.data =
+      128) map_changes.data =
       /*seasonData*/
-      ctx[8];
+      ctx[7];
       map.$set(map_changes);
     },
 
@@ -8040,9 +8040,9 @@ function create_if_block_1$4(ctx) {
     props: {
       credit:
       /*credits*/
-      ctx[7].find(
+      ctx[6].find(
       /*func*/
-      ctx[23]),
+      ctx[24]),
       showLink: true
     }
   });
@@ -8064,11 +8064,11 @@ function create_if_block_1$4(ctx) {
       const credits_1_changes = {};
       if (dirty &
       /*credits, selectedSeason*/
-      136) credits_1_changes.credit =
+      68) credits_1_changes.credit =
       /*credits*/
-      ctx[7].find(
+      ctx[6].find(
       /*func*/
-      ctx[23]);
+      ctx[24]);
       credits_1.$set(credits_1_changes);
     },
 
@@ -8096,21 +8096,19 @@ function create_fragment$8(ctx) {
   let current;
   let if_block =
   /*seasons*/
-  ctx[9] &&
-  /*selectedSeason*/
-  ctx[3] &&
-  /*seasonData*/
   ctx[8] &&
+  /*selectedSeason*/
+  ctx[2] &&
   /*seasonData*/
-  ctx[8].length &&
+  ctx[7] &&
+  /*seasonData*/
+  ctx[7].length &&
   /*country*/
-  ctx[6] &&
-  /*provinces*/
   ctx[5] &&
-  /*dictionary*/
-  ctx[1] &&
-  /*credits*/
-  ctx[7] && create_if_block$6(ctx);
+  /*provinces*/
+  ctx[4] &&
+  /*$dict*/
+  ctx[9] && create_if_block$6(ctx);
   return {
     c() {
       div = element("div");
@@ -8133,10 +8131,10 @@ function create_fragment$8(ctx) {
       attr(div, "class", "component-wrapper svelte-74kmwv");
       set_style(div, "--fontsize", Math.min(16, Math.max(8, (
       /*width*/
-      ctx[2] || 0) / 30)) + "px");
+      ctx[1] || 0) / 30)) + "px");
       add_render_callback(() =>
       /*div_elementresize_handler*/
-      ctx[24].call(div));
+      ctx[25].call(div));
     },
 
     m(target, anchor) {
@@ -8144,34 +8142,32 @@ function create_fragment$8(ctx) {
       if (if_block) if_block.m(div, null);
       div_resize_listener = add_resize_listener(div,
       /*div_elementresize_handler*/
-      ctx[24].bind(div));
+      ctx[25].bind(div));
       current = true;
     },
 
     p(ctx, [dirty]) {
       if (
       /*seasons*/
-      ctx[9] &&
-      /*selectedSeason*/
-      ctx[3] &&
-      /*seasonData*/
       ctx[8] &&
+      /*selectedSeason*/
+      ctx[2] &&
       /*seasonData*/
-      ctx[8].length &&
+      ctx[7] &&
+      /*seasonData*/
+      ctx[7].length &&
       /*country*/
-      ctx[6] &&
-      /*provinces*/
       ctx[5] &&
-      /*dictionary*/
-      ctx[1] &&
-      /*credits*/
-      ctx[7]) {
+      /*provinces*/
+      ctx[4] &&
+      /*$dict*/
+      ctx[9]) {
         if (if_block) {
           if_block.p(ctx, dirty);
 
           if (dirty &
-          /*seasons, selectedSeason, seasonData, country, provinces, dictionary, credits*/
-          1002) {
+          /*seasons, selectedSeason, seasonData, country, provinces, $dict*/
+          948) {
             transition_in(if_block, 1);
           }
         } else {
@@ -8190,10 +8186,10 @@ function create_fragment$8(ctx) {
 
       if (!current || dirty &
       /*width*/
-      4) {
+      2) {
         set_style(div, "--fontsize", Math.min(16, Math.max(8, (
         /*width*/
-        ctx[2] || 0) / 30)) + "px");
+        ctx[1] || 0) / 30)) + "px");
       }
     },
 
@@ -8223,7 +8219,9 @@ function instance$8($$self, $$props, $$invalidate) {
   let seasonData;
   let seasons;
   let $dir;
-  component_subscribe($$self, dir, $$value => $$invalidate(21, $dir = $$value));
+  let $dict;
+  component_subscribe($$self, dir, $$value => $$invalidate(22, $dir = $$value));
+  component_subscribe($$self, dict, $$value => $$invalidate(9, $dict = $$value));
   let {
     dataPath
   } = $$props;
@@ -8265,18 +8263,18 @@ function instance$8($$self, $$props, $$invalidate) {
   let selectedSeason;
 
   function handleSeasonSelected(e) {
-    $$invalidate(3, selectedSeason = e.detail);
+    $$invalidate(2, selectedSeason = e.detail);
   }
 
   onMount(() => {
-    $$invalidate(3, selectedSeason = season);
+    $$invalidate(2, selectedSeason = season);
   });
 
   const func = d => d.seasons.includes(selectedSeason);
 
   function div_elementresize_handler() {
     width = this.offsetWidth;
-    $$invalidate(2, width);
+    $$invalidate(1, width);
   }
 
   $$self.$$set = $$props => {
@@ -8314,30 +8312,30 @@ function instance$8($$self, $$props, $$invalidate) {
     if ($$self.$$.dirty &
     /*countryPath*/
     4096) {
-       fetch(countryPath).then(r => r.json()).then(r => $$invalidate(6, country = r));
+       fetch(countryPath).then(r => r.json()).then(r => $$invalidate(5, country = r));
     }
 
     if ($$self.$$.dirty &
     /*provincesPath*/
     8192) {
-       fetch(provincesPath).then(r => r.json()).then(r => $$invalidate(5, provinces = r));
+       fetch(provincesPath).then(r => r.json()).then(r => $$invalidate(4, provinces = r));
     }
 
     if ($$self.$$.dirty &
     /*dictionaryPath*/
     262144) {
-       fetch(dictionaryPath).then(r => r.json()).then(r => $$invalidate(1, dictionary = r));
+       fetch(dictionaryPath).then(r => r.json()).then(r => $$invalidate(21, dictionary = r));
     }
 
     if ($$self.$$.dirty &
     /*creditsPath*/
     16384) {
-       fetch(creditsPath).then(r => r.json()).then(r => $$invalidate(7, credits = r));
+       fetch(creditsPath).then(r => r.json()).then(r => $$invalidate(6, credits = r));
     }
 
     if ($$self.$$.dirty &
     /*dictionary*/
-    2) {
+    2097152) {
        dict.set(dictionary);
     }
 
@@ -8349,20 +8347,20 @@ function instance$8($$self, $$props, $$invalidate) {
 
     if ($$self.$$.dirty &
     /*direction, $dir*/
-    2621440) {
+    4718592) {
        if (!direction || direction === "") document.dir = $dir;
     }
 
     if ($$self.$$.dirty &
     /*width, data, mapVariable*/
-    1114116) {
-       $$invalidate(22, radiusScale = createRadiusScale(width, width, data, mapVariable));
+    1114114) {
+       $$invalidate(23, radiusScale = createRadiusScale(width, width, data, mapVariable));
     }
 
     if ($$self.$$.dirty &
     /*data, selectedSeason, colorArray, mapVariable, radiusScale*/
-    5308440) {
-       $$invalidate(8, seasonData = data.filter(d => d.season === selectedSeason).map(d => ({ ...d,
+    9502732) {
+       $$invalidate(7, seasonData = data.filter(d => d.season === selectedSeason).map(d => ({ ...d,
         province: cleanProvinceName(d.province),
         color: colorArray.color(d[mapVariable]),
         r: radiusScale(d[mapVariable])
@@ -8372,7 +8370,7 @@ function instance$8($$self, $$props, $$invalidate) {
     if ($$self.$$.dirty &
     /*data*/
     1048576) {
-       $$invalidate(9, seasons = [...new Set(data.map(d => d.season))].map((d, i) => ({
+       $$invalidate(8, seasons = [...new Set(data.map(d => d.season))].map((d, i) => ({
         id: i,
         name: d,
         year: years[d.toLowerCase()]
@@ -8380,9 +8378,9 @@ function instance$8($$self, $$props, $$invalidate) {
     }
   };
 
-   $$invalidate(4, colorArray = redArray);
+   $$invalidate(3, colorArray = redArray);
 
-  return [showSeasonSelector, dictionary, width, selectedSeason, colorArray, provinces, country, credits, seasonData, seasons, handleSeasonSelected, dataPath, countryPath, provincesPath, creditsPath, season, mapVariable, language, dictionaryPath, direction, data, $dir, radiusScale, func, div_elementresize_handler];
+  return [showSeasonSelector, width, selectedSeason, colorArray, provinces, country, credits, seasonData, seasons, $dict, handleSeasonSelected, dataPath, countryPath, provincesPath, creditsPath, season, mapVariable, language, dictionaryPath, direction, data, dictionary, $dir, radiusScale, func, div_elementresize_handler];
 }
 
 class Component extends SvelteComponent {
